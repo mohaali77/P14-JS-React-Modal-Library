@@ -1,0 +1,24 @@
+/* lib/modal-component.css */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  background: white;
+  padding: 20px;
+}
+
+.close-button {
+  background: #ccc;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
