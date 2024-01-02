@@ -3,11 +3,11 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-Object.defineProperty(exports, "TextInput", {
+Object.defineProperty(exports, "ModalComponent", {
   enumerable: true,
   get: function () {
-    return _TextInput.default;
+    return _modalComponent.default;
   }
 });
-var _TextInput = _interopRequireDefault(require("./TextInput"));
+var _modalComponent = _interopRequireDefault(require("./modal-component"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
