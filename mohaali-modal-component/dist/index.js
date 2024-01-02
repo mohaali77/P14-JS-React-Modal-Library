@@ -9,5 +9,5 @@ Object.defineProperty(exports, "ModalComponent", {
     return _modalComponent.default;
   }
 });
-var _modalComponent = _interopRequireDefault(require("./modal-component"));
+var _modalComponent = _interopRequireDefault(require("./modal-component.jsx"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
