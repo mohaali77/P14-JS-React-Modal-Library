@@ -2,7 +2,7 @@
 import React from 'react';
 import './modal-component.css';
 
-const ModalComponent = ({ isOpen, onClose, children }) => {
+const ModalComponent = ({ isOpen, onClose, modalContent }) => {
   if (!isOpen) {
     return null;
   }
@@ -13,7 +13,7 @@ const ModalComponent = ({ isOpen, onClose, children }) => {
         <button className="close-button" onClick={onClose}>
           Close
         </button>
-        {children}
+        {modalContent}
       </div>
     </div>
   );
