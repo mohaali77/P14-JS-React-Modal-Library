@@ -10,8 +10,8 @@ const ModalComponent = ({ isOpen, onClose, modalContent }) => {
 
   return <>
     <div className="modal-overlay">
-      <div className="modal">
-        <p>{modalContent}</p>
+      <div style={modalStyle} className="modal">
+        <p> {modalContent}Employee Created !</p>
         <img src={closeImg} alt='' className="close-button" onClick={onClose} />
       </div>
     </div>
