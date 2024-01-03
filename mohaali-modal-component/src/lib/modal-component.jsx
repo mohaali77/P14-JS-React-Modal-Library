@@ -1,22 +1,21 @@
 // lib/modal-component.js
 import React from 'react';
 import './modal-component.css';
+import closeImg from './images/modal-close.png'
 
 const ModalComponent = ({ isOpen, onClose, modalContent }) => {
   if (!isOpen) {
     return null;
   }
 
-  return (
+  return <>
     <div className="modal-overlay">
       <div className="modal">
-        <button className="close-button" onClick={onClose}>
-          Close
-        </button>
-        {modalContent}
+        <p>{modalContent}</p>
+        <img src={closeImg} alt='' className="close-button" onClick={onClose} />
       </div>
     </div>
-  );
+  </>;
 };
 
 export default ModalComponent;
