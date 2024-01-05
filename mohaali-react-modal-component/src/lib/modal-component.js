@@ -7,10 +7,6 @@ const ModalComponent = ({ isOpen, onClose, modalContent, overlayStyle, modalStyl
     return null;
   }
 
-  /*if(!linkToPage){
-
-  }*/
-
   return <>
     <div style={overlayStyle} className="modal-overlay">
       <div style={modalStyle} className="modal">
