@@ -4,7 +4,6 @@ import ModalComponent from './lib/modal-component';
 
 const App = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  //const [linkToPage, setLinkToPage] = useState(false);
 
   return (
     <div>
@@ -18,12 +17,6 @@ const App = () => {
       <ModalComponent
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
-      //modalContent={{}}
-      //overlayStyle={{}}
-      //modalStyle={{}}
-      //contentStyle={{}}
-      //imgStyle={{}}
-
       />
     </div>
   );
