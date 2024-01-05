@@ -21,10 +21,6 @@ const ModalComponent = _ref => {
   if (!isOpen) {
     return null;
   }
-
-  /*if(!linkToPage){
-   }*/
-
   return /*#__PURE__*/_react.default.createElement(_react.default.Fragment, null, /*#__PURE__*/_react.default.createElement("div", {
     style: overlayStyle,
     className: "modal-overlay"
