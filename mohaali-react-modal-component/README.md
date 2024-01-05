@@ -6,9 +6,12 @@ Node JS : https://nodejs.org/en
 
 ## Installation du composant
 
-1. Placez-vous dans votre projet et installez la bibliothèque :
+1. Placez-vous dans votre projet :
 
 #### `cd mon-projet`
+
+2. Installez la bibliothèque :
+
 #### `npm install mohaali-react-modal-component`
 
 ## Exemple d'utilisation du composant : 
