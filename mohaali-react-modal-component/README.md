@@ -65,7 +65,7 @@ return (
 export default MonComposant;
 ```
 
-# Modal Library
+# Modal Library | English
 
 ## Prerequisites
 
