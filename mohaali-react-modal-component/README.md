@@ -1,4 +1,4 @@
-# Bibliothèque modale
+# Bibliothèque modale | Français
 
 ## Pré-requis
 
@@ -63,4 +63,71 @@ return (
 }
 
 export default MonComposant;
+```
+
+# Modal Library
+
+## Prerequisites
+
+Node JS: https://nodejs.org/en
+
+## Installing the Component
+
+1. Navigate to your project:
+
+#### `cd my-project`
+
+2. Install the library:
+
+#### `npm install mohaali-react-modal-component`
+
+## Example of how to use the component:
+
+If you want for example, to show the modal after submitting a form, proceed as follows:
+
+```jsx
+
+//my-project/components/form.jsx
+
+// Import the component
+import ModalComponent from 'mohaali-react-modal-component'
+
+function MyComponent() {
+
+// Define a state modalOpen, which will be initialized as false
+const [modalOpen, setModalOpen] = useState(false);
+
+return (
+<div>
+
+  <form>
+   {/* Your form logic */ }
+
+   {/* On button click, update the modalOpen state to true */ }
+    <button onClick={() => {setModalOpen(true)}} type="submit">Submit</button>
+  </form>
+
+   {/* Call your component and set its props to display and close the modal */}
+  <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}/>
+
+   {/* To modify the style of the modal, proceed as follows: */}
+
+    <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}
+      /* Use this prop to add the desired text inside the modal. */
+      modalContent={'Your form has been successfully submitted!'} 
+      /* Use this prop to modify the style of the modal overlay. */
+      overlayStyle={{backgroundColor: 'red'}}
+      /* Use this prop to modify the style of the modal. */
+      modalStyle={{width: '500px'}}
+      /* Use this prop to modify the style of the text inside the modal. */
+      contentStyle={{fontSize: '15px'}}
+      /* Use this prop to modify the style of the image (which serves as the close button) of the modal. */
+      imgStyle={{height: '50px'}}
+    />
+
+</div>
+);
+}
+
+export default MyComponent;
 ```
