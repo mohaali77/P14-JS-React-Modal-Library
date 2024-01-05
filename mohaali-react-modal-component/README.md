@@ -13,19 +13,39 @@ npm (ou yarn) install mohaali-react-modal-component
 
 ## Exemple d'utilisation du composant : 
 
-2. Importez le composant dans le fichier souhaité :
+Si vous souhaitez, par exemple, afficher la modale lors de la soumission d'un formulaire. Procédez ainsi :
 
+```jsx
+
+//mon-projet/components/formulaire.jsx
+
+// Importez le composant
 import ModalComponent from 'mohaali-react-modal-component'
 
-3. Lancer le front-end:
+function MonComposant() {
 
-#### npm start ou yarn start
+// Définissez un state modalOpen, qui sera initialisé comme false
+const [modalOpen, setModalOpen] = useState(false);
 
-## Dépendances utilisés
+return (
+<div>
 
-1. React : 18.2.0
-2. React-dom : 18.2.0
-3. React-router-dom : 6.21.0
-4. React-scripts : 5.0.1
-5. React-table : 7.8.0
-6. Node : 20.9.0
+  <form>
+   {/* votre logique de formulaire*/ }
+
+   {/* Au clic sur le bouton, on modifie le state modalOpen comme true */ }
+    <button onClick={() => {setModalOpen(true)}} type="submit">Soumettre</button>
+  </form>
+
+   {/*Appelez votre composant, et définissez lui ces props
+   qui permettront d'afficher la modale, et de la fermer*/}
+  <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}/>
+
+   {/* Pour modifier le style de la modale, procédez ainsi : */}
+
+</div>
+);
+}
+
+export default MonComposant;
+```
