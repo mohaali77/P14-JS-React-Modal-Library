@@ -30,6 +30,14 @@ function MonComposant() {
 // Définissez un state modalOpen, qui sera initialisé comme false
 const [modalOpen, setModalOpen] = useState(false);
 
+// Créez la fonction qui permettra la fermeture de la modale
+const closeModal = () => {
+    setModalOpen(false)
+    /*Si vous souhaitez ajouter une navigation lors de la fermeture de la modale
+    vous pouvez effectuer un window.location ou tout autre méthode ici*/
+    window.location.href = '/votre-page'
+  };
+
 return (
 <div>
 
@@ -41,11 +49,11 @@ return (
   </form>
 
    {/*Appelez votre composant, et définissez lui ces props qui permettront d'afficher la modale, et de la fermer*/}
-  <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}/>
+  <ModalComponent isOpen={modalOpen} onClose={closeModal}/>
 
    {/* Pour modifier le style de la modale, procédez ainsi : */}
 
-    <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}
+    <ModalComponent isOpen={modalOpen} onClose={closeModal}
       /*Utilisez cette props pour ajouter le texte souhaité dans la modale.*/
       modalContent={'Votre formulaire a été envoyé avec succès !'} 
       /*Utilisez cette props pour modifier le style de l'overlay de la modale.*/
@@ -97,6 +105,14 @@ function MyComponent() {
 // Define a state modalOpen, which will be initialized as false
 const [modalOpen, setModalOpen] = useState(false);
 
+//Create the fucntion to close the modale
+const closeModal = () => {
+    setModalOpen(false)
+    /* If you want to add navigation upon modal closure,
+       you can use window.location or any other method here */
+    window.location.href = '/your-page'
+};
+
 return (
 <div>
 
@@ -108,11 +124,11 @@ return (
   </form>
 
    {/* Call your component and set its props to display and close the modal */}
-  <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}/>
+  <ModalComponent isOpen={modalOpen} onClose={closeModal}/>
 
    {/* To modify the style of the modal, proceed as follows: */}
 
-    <ModalComponent isOpen={modalOpen} onClose={() => setModalOpen(false)}
+    <ModalComponent isOpen={modalOpen} onClose={closeModal}
       /* Use this prop to add the desired text inside the modal. */
       modalContent={'Your form has been successfully submitted!'} 
       /* Use this prop to modify the style of the modal overlay. */
