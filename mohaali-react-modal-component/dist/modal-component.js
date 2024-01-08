@@ -11,12 +11,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 const ModalComponent = _ref => {
   let {
     isOpen,
-    onClose,
     modalContent,
     overlayStyle,
     modalStyle,
     contentStyle,
-    imgStyle
+    imgStyle,
+    onClose
   } = _ref;
   if (!isOpen) {
     return null;
@@ -32,7 +32,7 @@ const ModalComponent = _ref => {
   }, modalContent), /*#__PURE__*/_react.default.createElement("img", {
     style: imgStyle,
     src: _modalClose.default,
-    alt: "",
+    alt: "close button of modal",
     className: "close-button",
     onClick: onClose
   }))));
