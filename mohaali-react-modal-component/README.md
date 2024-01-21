@@ -2,7 +2,15 @@
 
 ## Pré-requis
 
-Node JS : https://nodejs.org/en
+Visual Studio Code (Recommandation) 
+Node JS 20.9 : https://nodejs.org/en
+React 18.2.0
+
+## Création du projet React
+
+1. Créez votre projet :
+
+#### `npx i create-react-app mon-projet`
 
 ## Installation du composant
 
@@ -77,7 +85,15 @@ export default MonComposant;
 
 ## Prerequisites
 
-Node JS: https://nodejs.org/en
+Visual Studio Code (Recommendation) 
+Node JS 20.9 : https://nodejs.org/en
+React 18.2.0
+
+## Creation of your React project
+
+1. Create your projet :
+
+#### `npx i create-react-app my-project`
 
 ## Installing the Component
 
