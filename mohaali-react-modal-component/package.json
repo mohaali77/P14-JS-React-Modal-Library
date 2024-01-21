@@ -1,6 +1,20 @@
 {
   "name": "mohaali-react-modal-component",
-  "version": "0.1.4",
+  "version": "0.1.6",
+  "author": "mohaali",
+  "description": "A React library for displaying modals in a simple and responsive manner.",
+  "keywords": [
+    "modal",
+    "popup",
+    "dialog",
+    "overlay",
+    "responsive",
+    "javascript",
+    "library",
+    "react",
+    "node",
+    "yarn"
+  ],
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
